@@ -1,13 +1,17 @@
+// grn returns a random int for the exercises below.
+function grn() {
+  return( Math.floor(Math.random()*10000) );
+}
+
 // 1.
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write and example of using the function.
 
 function max(a,b){
-    // Your answer here
     return Math.max(a,b);
 }
 
-console.log(max(2,3));
+console.log('Ex 1: ' + max(grn(),grn()));
 
 
 // 2.
@@ -15,21 +19,22 @@ console.log(max(2,3));
 // Then, write and example of using the function.
 
 function maxOfThree(a,b,c){
-    // Your answer here
     return Math.max(a,b,c);
 }
 
-console.log(maxOfThree(1,2,3));
+console.log('Ex 2: ' + maxOfThree(grn(),grn(),grn()));
 
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // Then, write and example of using the function.
 
 function isVowel(char){
-    // Your answer here
     var vowels = ['a','e','i','o','u'];
     return( vowels.indexOf(char) > -1 );
 }
+
+console.log('Ex 3a (true): ' + isVowel('e'));
+console.log('Ex 3b (false): ' + isVowel('f'));
 
 
 // 4.
@@ -40,7 +45,7 @@ function sum(a,b) {
   return( a+b );
 }
 
-sum(1,2);
+console.log('Ex 4: ' + sum(grn(),grn()));
 
 
 // 5.
@@ -51,7 +56,7 @@ function averageOfThree(a,b,c) {
   return( (a+b+c)/3 );
 }
 
-console.log(averageOfThree(1,2,3));
+console.log('Ex 5: ' + averageOfThree(grn(),grn(),grn()));
 
 
 // 6.
@@ -62,7 +67,7 @@ function getLength(aString) {
   return( aString.length );
 }
 
-console.log(getLength('me'));
+console.log('Ex 6: ' + getLength('me'));
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
@@ -77,7 +82,7 @@ function greaterThan(a,b) {
   return false;
 }
 
-console.log(greaterThan(1,2));
+console.log('Ex 7: ' + greaterThan(grn(),grn()));
 
 
 // 8.
@@ -91,7 +96,7 @@ function greet(name) {
   return 'Hello, ' + name + '!';
 }
 
-console.log(greet('Eric'));
+console.log('Ex 8: ' + greet('Eric'));
 
 
 // 9.
@@ -107,4 +112,4 @@ function madlib(a,b,c,d) {
   return a + ' brown ' + b + ' jumps ' + c + ' the ' + d;
 }
 
-console.log(madlib('quick', 'fox', 'over', 'fence'));
+console.log('Ex 9: ' + madlib('quick', 'fox', 'over', 'fence'));
